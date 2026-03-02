@@ -579,7 +579,7 @@
   .srv-float-card { padding: 16px 14px; }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .srv-hero-cards { grid-template-columns: 1fr; }
   .srv-tab-btn { width: 100%; justify-content: flex-start; }
   .srv-tab-icon { display: inline; }
