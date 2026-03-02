@@ -1,0 +1,199 @@
+/* ===== ABOUT US SECTION ===== */
+.about {
+  padding: 100px 24px;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-tag {
+  display: inline-block;
+  background: rgba(245, 166, 35, 0.12);
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.about-title {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: var(--dark);
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+.about-title span { color: var(--primary); }
+
+.about-desc {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+/* Expandable content */
+.about-extra {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+.about-extra.open {
+  max-height: 640px;
+  opacity: 1;
+}
+
+/* View More button */
+.about-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 0.95rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin-top: 8px;
+  position: relative;
+  transition: gap var(--transition);
+}
+.about-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; left: 0;
+  width: 100%; height: 2px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+.about-link:hover { gap: 16px; }
+.about-link:hover::after { transform: scaleX(1); }
+.about-link svg {
+  width: 18px; height: 18px;
+  stroke: var(--primary);
+  transition: transform var(--transition);
+}
+.about-link:hover svg { transform: translateX(4px); }
+
+/* Right Image */
+.about-image-wrap {
+  position: relative;
+}
+.about-image-wrap::before {
+  content: '';
+  position: absolute;
+  top: -20px; right: -20px;
+  width: 100%; height: 100%;
+  background: rgba(245, 166, 35, 0.12);
+  border-radius: 16px;
+  z-index: 0;
+}
+.about-image-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: -20px; left: -20px;
+  width: 55%; height: 55%;
+  background: rgba(44, 62, 122, 0.07);
+  border-radius: 16px;
+  z-index: 0;
+}
+.about-image-wrap img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.13);
+}
+
+/* Startup badge */
+.about-badge {
+  position: absolute;
+  bottom: -16px;
+  left: -24px;
+  background: var(--dark);
+  color: var(--white);
+  border-radius: 14px;
+  padding: 16px 22px;
+  z-index: 2;
+  box-shadow: 0 8px 30px rgba(44,62,122,0.28);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 190px;
+}
+.badge-icon { font-size: 1.8rem; line-height: 1; }
+.badge-text {
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(255,255,255,0.9);
+}
+
+/* ===== MARQUEE ===== */
+.marquee-section {
+  background: var(--primary);
+  padding: 28px 0;
+  overflow: hidden;
+}
+.marquee-track {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  width: max-content;
+}
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 48px;
+  white-space: nowrap;
+}
+.marquee-item span {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+.marquee-dot {
+  width: 8px; height: 8px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-section:hover .marquee-track { animation-play-state: paused; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 968px) {
+  .about-container { grid-template-columns: 1fr; gap: 50px; }
+  .about-image-wrap { order: -1; }
+  .about-badge { left: 12px; }
+}
+@media (max-width: 600px) {
+  .about { padding: 70px 24px; }
+  .about-image-wrap img { height: 280px; }
+  .about-badge { bottom: -10px; left: 8px; padding: 12px 16px; min-width: 160px; }
+  .badge-icon { font-size: 1.4rem; }
+}

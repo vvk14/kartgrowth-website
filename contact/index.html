@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact KartGrowth – Book your free eCommerce audit today." />
+  <title>Contact | KartGrowth</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+
+  <!-- Hero -->
+  <section class="contact-hero">
+    <span class="contact-hero-tag">Let's Talk</span>
+    <h1>Get In <span>Touch</span><br>With Us</h1>
+    <p>Ready to scale your eCommerce brand? Reach out and let's build something great together.</p>
+  </section>
+
+  <!-- Info Cards -->
+  <div class="contact-info-row">
+    <div class="contact-info-card">
+      <div class="info-card-icon">📞</div>
+      <div class="info-card-title">Call Us</div>
+      <div class="info-card-value">
+        <a href="tel:7433984615">7433 984 615</a>
+      </div>
+    </div>
+    <div class="contact-info-card">
+      <div class="info-card-icon">✉️</div>
+      <div class="info-card-title">Email Us</div>
+      <div class="info-card-value">
+        <a href="mailto:hello@kartgrowth.com">hello@kartgrowth.com</a>
+      </div>
+    </div>
+    <div class="contact-info-card">
+      <div class="info-card-icon">💬</div>
+      <div class="info-card-title">WhatsApp</div>
+      <div class="info-card-value">
+        <a href="https://wa.me/917433984615" target="_blank">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Contact Section -->
+  <section class="contact-main">
+    <div class="contact-main-inner">
+
+      <!-- Left -->
+      <div class="contact-left">
+        <span class="contact-left-tag">Why Reach Out?</span>
+        <h2>Let's Grow Your<br><span>Brand Together</span></h2>
+        <p>
+          Whether you're launching a new product, struggling with ads, or want to
+          take your marketplace presence to the next level — we're here to help.
+          Book your free audit and get a custom growth plan within 24 hours.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <div class="detail-icon">📞</div>
+            <div class="detail-info">
+              <div class="detail-label">Phone</div>
+              <div class="detail-value"><a href="tel:7433984615">7433 984 615</a></div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="detail-icon">✉️</div>
+            <div class="detail-info">
+              <div class="detail-label">Email</div>
+              <div class="detail-value"><a href="mailto:hello@kartgrowth.com">hello@kartgrowth.com</a></div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="detail-icon">📍</div>
+            <div class="detail-info">
+              <div class="detail-label">Location</div>
+              <div class="detail-value">India (Remote-First Agency)</div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="detail-icon">⏰</div>
+            <div class="detail-info">
+              <div class="detail-label">Working Hours</div>
+              <div class="detail-value">Mon – Sat, 10:00 AM – 7:00 PM</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="#" class="contact-social-btn" title="Facebook">f</a>
+          <a href="#" class="contact-social-btn" title="Instagram">in</a>
+          <a href="#" class="contact-social-btn" title="LinkedIn">li</a>
+          <a href="https://wa.me/917433984615" target="_blank" class="contact-social-btn" title="WhatsApp" style="background:#25d366;">W</a>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-wrap">
+        <div class="form-title">Book Your Free Audit 🚀</div>
+        <div class="form-subtitle">Fill in the details and we'll get back within 24 hours.</div>
+
+        <div id="contact-form-area">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name *</label>
+              <input type="text" id="cf-name" placeholder="Rahul Sharma" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" id="cf-phone" placeholder="9876543210" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" id="cf-email" placeholder="rahul@yourbrand.com" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Brand / Company Name</label>
+              <input type="text" id="cf-brand" placeholder="Your Brand Name" />
+            </div>
+            <div class="form-group">
+              <label>Monthly Revenue</label>
+              <select id="cf-revenue">
+                <option value="" disabled selected>Select range</option>
+                <option>Just Starting Out</option>
+                <option>Under ₹1 Lakh</option>
+                <option>₹1L – ₹5L</option>
+                <option>₹5L – ₹20L</option>
+                <option>₹20L+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Which platforms are you on?</label>
+            <select id="cf-platform">
+              <option value="" disabled selected>Select platform</option>
+              <option>Amazon</option>
+              <option>Flipkart</option>
+              <option>Both Amazon & Flipkart</option>
+              <option>Myntra / Meesho</option>
+              <option>My Own Website</option>
+              <option>Not yet launched</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Tell us about your goals</label>
+            <textarea id="cf-message" placeholder="e.g. I want to increase my Amazon sales, need help with ads..."></textarea>
+          </div>
+          <button class="form-submit" onclick="submitContactForm()">
+            Send Message & Book Audit
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Success State -->
+        <div class="form-success" id="form-success">
+          <div class="success-icon">🎉</div>
+          <h3>We've Got Your Message!</h3>
+          <p>Our team will reach out within <strong>24 hours</strong>. Keep an eye on your phone & email.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/917433984615" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.57a.75.75 0 00.918.919l5.819-1.474A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.712 9.712 0 01-4.953-1.354l-.355-.211-3.676.931.96-3.576-.232-.368A9.715 9.715 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+    </svg>
+  </a>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
