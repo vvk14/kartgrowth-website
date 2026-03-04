@@ -130,7 +130,7 @@
 /* Info Cards Row */
 .contact-info-row {
   max-width: 1200px;
-  margin: -40px auto 0;
+  margin: auto auto 50px;
   padding: 0 24px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -183,7 +183,7 @@
 
 /* Main Contact Section */
 .contact-main {
-  padding: 80px 24px 100px;
+  padding: 80px 24px 50px;
   background: #fafafa;
 }
 .contact-main-inner {
@@ -399,14 +399,27 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 968px) {
-  .contact-info-row { grid-template-columns: 1fr; margin-top: -20px; }
-  .contact-main-inner { grid-template-columns: 1fr; gap: 40px; }
-  .cta-inner { flex-direction: column; text-align: center; }
-  .cta-right { justify-content: center; }
-  .contact-main {padding: 80px 15px 100px;}
+  .contact-main-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  /* Form goes FIRST (top) on mobile */
+  .contact-form-wrap { order: -1; }
+
+  .contact-info-row {
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 40px 24px;
+  }
+
+  .cta-inner   { flex-direction: column; text-align: center; }
+  .cta-right   { justify-content: center; }
+  .contact-main { padding: 40px 16px 40px; }
 }
+
 @media (max-width: 600px) {
   .contact-form-wrap { padding: 28px 20px; }
-  .form-row { grid-template-columns: 1fr; }
-  .cta-phone { font-size: 1.8rem; }
+  .form-row          { grid-template-columns: 1fr; }
+  .cta-phone         { font-size: 1.8rem; }
+  .contact-hero      { padding: 100px 16px 60px; }
 }

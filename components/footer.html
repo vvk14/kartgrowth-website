@@ -6,53 +6,71 @@
       <div>
         <div class="footer-logo">KARTGRO<span>W</span>TH</div>
         <p class="footer-desc">
-          We help brands scale faster with data-driven eCommerce solutions. 
-          Performance marketing, store design, and full account management.
+          We help brands scale faster with data-driven eCommerce solutions.
+          Performance marketing, store design, and full account management —
+          all under one roof.
         </p>
         <div class="social-links">
-          <a href="#" class="social-link">f</a>
-          <a href="#" class="social-link">in</a>
-          <a href="#" class="social-link">X</a>
+          <a href="#" class="social-link" title="Facebook">f</a>
+          <a href="#" class="social-link" title="Instagram">ig</a>
+          <a href="#" class="social-link" title="LinkedIn">in</a>
+          <a href="https://wa.me/917433984615" target="_blank" class="social-link social-wa" title="WhatsApp">wa</a>
         </div>
       </div>
 
       <!-- Quick Links -->
-      <div>
-        <h4 class="footer-heading">Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/about/index.html">About Us</a></li>
-          <li><a href="/services/index.html">Services</a></li>
-          <li><a href="/contact/index.html">Contact</a></li>
+      <div class="footer-accordion-col">
+        <h4 class="footer-heading footer-acc-trigger" onclick="footerToggle(this)">
+          Quick Links
+          <span class="footer-acc-arrow">&#8250;</span>
+        </h4>
+        <ul class="footer-links footer-acc-body">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/contact/">Contact</a></li>
         </ul>
       </div>
 
       <!-- Services -->
-      <div>
-        <h4 class="footer-heading">Services</h4>
-        <ul class="footer-links">
-          <li><a href="#">Store Design</a></li>
-          <li><a href="#">Performance Marketing</a></li>
-          <li><a href="#">Account Management</a></li>
-          <li><a href="#">Product Optimization</a></li>
-          <li><a href="#">SEO & Visibility</a></li>
+      <div class="footer-accordion-col">
+        <h4 class="footer-heading footer-acc-trigger" onclick="footerToggle(this)">
+          Our Services
+          <span class="footer-acc-arrow">&#8250;</span>
+        </h4>
+        <ul class="footer-links footer-acc-body">
+          <li><a href="/services/">Marketplace Management</a></li>
+          <li><a href="/services/">Performance Marketing</a></li>
+          <li><a href="/services/">Website Development</a></li>
+          <li><a href="/services/">Creative Studio</a></li>
+          <li><a href="/services/">Account Management</a></li>
+          <li><a href="/services/">SEO &amp; Listing Optimization</a></li>
         </ul>
       </div>
 
       <!-- Contact -->
-      <div>
-        <h4 class="footer-heading">Contact Us</h4>
-        <div class="footer-contact-item">
-          <i class="icon">📍</i>
-          <span>Ahmedabad, Gujarat, India 388121</span>
-        </div>
-        <div class="footer-contact-item">
-          <i class="icon">📞</i>
-          <span>+91 98765 43210</span>
-        </div>
-        <div class="footer-contact-item">
-          <i class="icon">✉️</i>
-          <span>hello@kartgrowth.com</span>
+      <div class="footer-accordion-col">
+        <h4 class="footer-heading footer-acc-trigger" onclick="footerToggle(this)">
+          Get In Touch
+          <span class="footer-acc-arrow">&#8250;</span>
+        </h4>
+        <div class="footer-acc-body">
+          <div class="footer-contact-item">
+            <i class="icon">📍</i>
+            <span>Ahmedabad, Gujarat,<br>India 388121</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="icon">📞</i>
+            <a href="tel:7433984615"><span>7433 984 615</span></a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="icon">✉️</i>
+            <a href="mailto:hello@kartgrowth.com"><span>hello@kartgrowth.com</span></a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="icon">💬</i>
+            <a href="https://wa.me/917433984615" target="_blank"><span>Chat on WhatsApp</span></a>
+          </div>
         </div>
       </div>
 
@@ -60,7 +78,12 @@
 
     <div class="footer-bottom">
       <p>© 2026 KartGrowth. All rights reserved.</p>
-      <p>Made with ❤️ for eCommerce brands | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+      <p>Made with ❤️ for eCommerce brands
+        <span style="opacity:0.4;margin:0 6px;">|</span>
+        <a href="#">Privacy Policy</a>
+        <span style="opacity:0.4;margin:0 6px;">|</span>
+        <a href="#">Terms of Service</a>
+      </p>
     </div>
   </div>
 </footer>

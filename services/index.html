@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="KartGrowth Services – Marketplace, Performance Marketing, Website Development & Creative Studio." />
   <title>Services | KartGrowth</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/favicon-apple-touch-icon.png">
+  <link rel="manifest" href="../images/favicon/site.webmanifest">
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/service.css" />
 </head>
@@ -18,10 +23,7 @@
     <div class="srv-hero-container">
       <div class="srv-hero-content">
         <span class="srv-badge">What We Offer</span>
-        <h1>
-          Powerful <span>eCommerce</span><br>
-          Services That Scale
-        </h1>
+        <h1>Powerful <span>eCommerce</span><br>Services That Scale</h1>
         <p>From marketplaces to creatives — we handle everything so you can focus on growing your brand.</p>
         <div class="srv-hero-btns">
           <a href="/contact/" class="srv-btn-primary">Book Free Audit</a>
@@ -31,48 +33,38 @@
       <div class="srv-hero-cards">
         <div class="srv-float-card">
           <span>🛒</span>
-          <div>
-            <strong>7 Marketplaces</strong>
-            <p>Amazon to Instamart</p>
-          </div>
+          <div><strong>7 Marketplaces</strong><p>Amazon to Instamart</p></div>
         </div>
         <div class="srv-float-card">
           <span>📈</span>
-          <div>
-            <strong>Performance Marketing</strong>
-            <p>Meta, Google & More</p>
-          </div>
+          <div><strong>Performance Marketing</strong><p>Meta, Google & More</p></div>
         </div>
         <div class="srv-float-card">
           <span>🎨</span>
-          <div>
-            <strong>Creative Studio</strong>
-            <p>Graphics, Video & Branding</p>
-          </div>
+          <div><strong>Creative Studio</strong><p>Graphics, Video & Branding</p></div>
         </div>
         <div class="srv-float-card">
           <span>💻</span>
-          <div>
-            <strong>Web Development</strong>
-            <p>Shopify & Landing Pages</p>
-          </div>
+          <div><strong>Web Development</strong><p>Shopify & Landing Pages</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== TAB SECTION ===== -->
+  <!-- ===== SERVICES SECTION ===== -->
   <section class="srv-tabs-section" id="services">
     <div class="srv-container">
 
       <div class="srv-section-head">
         <span class="srv-badge">All Services</span>
         <h2>Everything Your Brand <span>Needs</span></h2>
-        <p>Click a category below to explore what we do in detail.</p>
+        <p>Click a category to explore what we do in detail.</p>
       </div>
 
-      <!-- Tab Nav -->
-      <div class="srv-tab-nav">
+      <!-- ========================================
+           DESKTOP: Tab Nav (hidden on mobile)
+      ========================================= -->
+      <div class="srv-tab-nav desktop-tabs">
         <button class="srv-tab-btn active" onclick="srvTab('marketplaces', this)">
           <span class="srv-tab-icon">🛒</span>
           <span class="srv-tab-label">Market Places</span>
@@ -91,344 +83,238 @@
         </button>
       </div>
 
-      <!-- Panel: Marketplaces -->
-      <div class="srv-panel active" id="srv-marketplaces">
-        <div class="srv-panel-intro">
-          <h3>Marketplace Management</h3>
-          <p>We manage your brand presence across all major Indian marketplaces — from account setup to daily operations and ads.</p>
+      <!-- ========================================
+           DESKTOP: Tab Panels (hidden on mobile)
+      ========================================= -->
+      <div class="desktop-panels">
+        <!-- Panel: Marketplaces -->
+        <div class="srv-panel active" id="srv-marketplaces">
+          <div class="srv-panel-intro">
+            <h3>Marketplace Management</h3>
+            <p>We manage your brand presence across all major Indian marketplaces — from account setup to daily operations and ads.</p>
+          </div>
+          <div class="srv-cards-grid">
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/amazon.svg" alt="Amazon Service"></div>
+                <div class="srv-card-tag">Most Popular</div></div><h4>Amazon</h4><p>Full account management, listings, A+ content & sponsored ads on India's largest marketplace.</p><ul class="srv-card-list"><li>Account Setup & Management</li><li>Product Listing & SEO</li><li>Amazon Ads (PPC)</li><li>A+ Content Creation</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/flipkart.svg" alt="Flipkart Service"></div>
+            </div><h4>Flipkart</h4><p>Seller account setup, catalog management & growth strategy on Flipkart.</p><ul class="srv-card-list"><li>Seller Onboarding</li><li>Catalog Management</li><li>Flipkart Ads</li><li>Order Management</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/myntra.svg" alt="Myntra Service"></div>
+            </div><h4>Myntra</h4><p>Fashion-first brand building and listing optimization on Myntra.</p><ul class="srv-card-list"><li>Brand Store Setup</li><li>Listing Optimization</li><li>Image & Content</li><li>Campaign Management</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/meesho.svg" alt="Meesho Service"></div>
+            </div><h4>Meesho</h4><p>Expand to Tier 2 & 3 markets with targeted Meesho strategies.</p><ul class="srv-card-list"><li>Supplier Onboarding</li><li>Product Uploads</li><li>Pricing Strategy</li><li>Growth Optimization</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/blinkit.svg" alt="Blinkit Service"></div>
+                <div class="srv-card-tag srv-tag-new">Quick Commerce</div></div><h4>Blinkit</h4><p>Quick commerce onboarding and daily visibility on Blinkit.</p><ul class="srv-card-list"><li>Vendor Onboarding</li><li>SKU Management</li><li>Stock Monitoring</li><li>Promotions Setup</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/zepto.svg" alt="Zepto Service"></div>
+                <div class="srv-card-tag srv-tag-new">Quick Commerce</div></div><h4>Zepto</h4><p>10-minute delivery platform listing setup and full management.</p><ul class="srv-card-list"><li>Platform Onboarding</li><li>Product Listing</li><li>Inventory Setup</li><li>Performance Tracking</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/swiggy.svg" alt="Swiggy Instamart"></div>
+                <div class="srv-card-tag srv-tag-new">Quick Commerce</div></div><h4>Instamart</h4><p>Swiggy Instamart onboarding, catalog management & operations.</p><ul class="srv-card-list"><li>Seller Registration</li><li>Catalog Upload</li><li>Pricing & Offers</li><li>Daily Operations</li></ul></div>
+          </div>
         </div>
-        <div class="srv-cards-grid">
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">🛍️</div>
-              <div class="srv-card-tag">Most Popular</div>
-            </div>
-            <h4>Amazon</h4>
-            <p>Full account management, listings, A+ content & sponsored ads on India's largest marketplace.</p>
-            <ul class="srv-card-list">
-              <li>Account Setup & Management</li>
-              <li>Product Listing & SEO</li>
-              <li>Amazon Ads (PPC)</li>
-              <li>A+ Content Creation</li>
-            </ul>
+
+        <!-- Panel: Performance Marketing -->
+        <div class="srv-panel" id="srv-performance">
+          <div class="srv-panel-intro">
+            <h3>Performance Marketing</h3>
+            <p>We help brands grow with data-driven paid campaigns across Meta, Google and beyond.</p>
           </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">📦</div>
-            </div>
-            <h4>Flipkart</h4>
-            <p>Seller account setup, catalog management & growth strategy on Flipkart.</p>
-            <ul class="srv-card-list">
-              <li>Seller Onboarding</li>
-              <li>Catalog Management</li>
-              <li>Flipkart Ads</li>
-              <li>Order Management</li>
-            </ul>
+          <div class="srv-cards-grid">
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/meta.svg" alt="Meta Ads"></div>
+                <div class="srv-card-tag">High ROI</div></div><h4>Meta Ads</h4><p>Facebook & Instagram campaigns built to convert and scale your eCommerce brand.</p><ul class="srv-card-list"><li>Campaign Strategy & Setup</li><li>Audience Research</li><li>Creative Direction</li><li>ROAS Optimization</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/google-ads.svg" alt="Google Ads"></div>
+                <div class="srv-card-tag">High Intent</div></div><h4>Google Ads</h4><p>Search, Shopping & Display campaigns to drive high-intent buyers to your store.</p><ul class="srv-card-list"><li>Search Campaigns</li><li>Google Shopping</li><li>Display & YouTube</li><li>Keyword Optimization</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/retargeting.png" alt="Retargeting"></div>
+            </div><h4>Retargeting</h4><p>Re-engage website visitors and cart abandoners to maximize conversions.</p><ul class="srv-card-list"><li>Pixel Setup & Tracking</li><li>Custom Audiences</li><li>Cart Recovery Ads</li><li>Lookalike Campaigns</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/digital-campaign.png" alt="D2C Campaigns"></div>
+            </div><h4>D2C Campaigns</h4><p>Full-funnel direct-to-consumer marketing strategies for your own store.</p><ul class="srv-card-list"><li>Brand Awareness Ads</li><li>Product Launch Campaigns</li><li>Offer & Sale Promotions</li><li>Customer Acquisition</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/funnel_ads.png" alt="Funnel Ads"></div>
+            </div><h4>Funnel Ads</h4><p>Top, mid & bottom funnel creatives engineered specifically for conversions.</p><ul class="srv-card-list"><li>TOFU Awareness Ads</li><li>MOFU Consideration</li><li>BOFU Conversion Ads</li><li>A/B Testing</li></ul></div>
           </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">👗</div>
-            </div>
-            <h4>Myntra</h4>
-            <p>Fashion-first brand building and listing optimization on Myntra.</p>
-            <ul class="srv-card-list">
-              <li>Brand Store Setup</li>
-              <li>Listing Optimization</li>
-              <li>Image & Content</li>
-              <li>Campaign Management</li>
-            </ul>
+        </div>
+
+        <!-- Panel: Website Development -->
+        <div class="srv-panel" id="srv-webdev">
+          <div class="srv-panel-intro">
+            <h3>Website Development</h3>
+            <p>We build fast, conversion-focused eCommerce websites and landing pages that turn visitors into customers.</p>
           </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">🏷️</div>
-            </div>
-            <h4>Meesho</h4>
-            <p>Expand to Tier 2 & 3 markets with targeted Meesho strategies.</p>
-            <ul class="srv-card-list">
-              <li>Supplier Onboarding</li>
-              <li>Product Uploads</li>
-              <li>Pricing Strategy</li>
-              <li>Growth Optimization</li>
-            </ul>
+          <div class="srv-cards-grid">
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/shopify.svg" alt="Shopify Service"></div>
+                <div class="srv-card-tag">Most Popular</div></div><h4>Shopify Development</h4><p>Custom Shopify stores built for speed, great UX and maximum conversions.</p><ul class="srv-card-list"><li>Custom Theme Setup</li><li>App Integration</li><li>Mobile Optimized</li><li>Payment Gateway Setup</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/ecommerce.png" alt="eCommerce Website"></div>
+            </div><h4>eCommerce Website</h4><p>Full eCommerce website creation from scratch — designed, built and launched.</p><ul class="srv-card-list"><li>UI/UX Design</li><li>Frontend Development</li><li>Product Catalog</li><li>SEO Foundation</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/landing-page.png" alt="Landing Pages"></div>
+            </div><h4>Landing Pages</h4><p>High-converting landing pages for products, offers and ad campaigns.</p><ul class="srv-card-list"><li>Offer Page Design</li><li>Lead Capture Pages</li><li>Product Launch Pages</li><li>Fast Load Speed</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/performance.png" alt="CRO Optimization"></div>
+            </div><h4>CRO Optimization</h4><p>Conversion rate optimization to turn more of your existing traffic into buyers.</p><ul class="srv-card-list"><li>UX Audit & Fixes</li><li>Checkout Optimization</li><li>Heatmap Analysis</li><li>A/B Testing</li></ul></div>
           </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">⚡</div>
-              <div class="srv-card-tag srv-tag-new">Quick Commerce</div>
-            </div>
-            <h4>Blinkit</h4>
-            <p>Quick commerce onboarding and daily visibility on Blinkit.</p>
-            <ul class="srv-card-list">
-              <li>Vendor Onboarding</li>
-              <li>SKU Management</li>
-              <li>Stock Monitoring</li>
-              <li>Promotions Setup</li>
-            </ul>
+        </div>
+
+        <!-- Panel: Creative Studio -->
+        <div class="srv-panel" id="srv-creative">
+          <div class="srv-panel-intro">
+            <h3>Creative Studio</h3>
+            <p>Visuals that stop the scroll, tell your story and convert browsers into buyers.</p>
           </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">🟣</div>
-              <div class="srv-card-tag srv-tag-new">Quick Commerce</div>
-            </div>
-            <h4>Zepto</h4>
-            <p>10-minute delivery platform listing setup and full management.</p>
-            <ul class="srv-card-list">
-              <li>Platform Onboarding</li>
-              <li>Product Listing</li>
-              <li>Inventory Setup</li>
-              <li>Performance Tracking</li>
-            </ul>
-          </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">🛒</div>
-              <div class="srv-card-tag srv-tag-new">Quick Commerce</div>
-            </div>
-            <h4>Instamart</h4>
-            <p>Swiggy Instamart onboarding, catalog management & operations.</p>
-            <ul class="srv-card-list">
-              <li>Seller Registration</li>
-              <li>Catalog Upload</li>
-              <li>Pricing & Offers</li>
-              <li>Daily Operations</li>
-            </ul>
+          <div class="srv-cards-grid">
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/product_graphics.png" alt="Product Graphics"></div>
+            </div><h4>Product Graphics</h4><p>Eye-catching product images and main image designs that drive clicks.</p><ul class="srv-card-list"><li>Main Image Design</li><li>White Background Edits</li><li>Lifestyle Composites</li><li>Image Retouching</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/Infographics.png" alt="Infographics"></div>
+            </div><h4>Infographics</h4><p>Feature-highlight infographics that educate customers and boost conversions.</p><ul class="srv-card-list"><li>Feature Callouts</li><li>Size & Spec Charts</li><li>Comparison Graphics</li><li>How-to Visuals</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/A_Content.png" alt="A+ Content"></div>
+                <div class="srv-card-tag">Amazon Special</div></div><h4>A+ Content</h4><p>Premium A+ / EBC content for Amazon & Flipkart that builds trust and increases sales.</p><ul class="srv-card-list"><li>Brand Story Module</li><li>Comparison Charts</li><li>Enhanced Images</li><li>Text + Visual Layout</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/Ad_creatives.png" alt="Ad Creatives"></div>
+            </div><h4>Ad Creatives</h4><p>Scroll-stopping static and motion ad creatives for Meta, Google and marketplaces.</p><ul class="srv-card-list"><li>Static Ad Banners</li><li>Carousel Designs</li><li>Story & Reel Graphics</li><li>Offer Creatives</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/video-editing.png" alt="Video Editing"></div>
+            </div><h4>Video Editing</h4><p>Product videos, reels and brand films edited for maximum impact.</p><ul class="srv-card-list"><li>Product Demo Videos</li><li>Instagram Reels</li><li>Ad Video Edits</li><li>Brand Films</li></ul></div>
+            <div class="srv-card"><div class="srv-card-top">
+                <div class="srv-card-emoji"><img src="../images/services_icon/brand.png" alt="Branding"></div>
+            </div><h4>Branding</h4><p>Logo, identity and brand guidelines that make your brand unforgettable.</p><ul class="srv-card-list"><li>Logo Design</li><li>Brand Color Palette</li><li>Typography System</li><li>Brand Guidelines Doc</li></ul></div>
           </div>
         </div>
       </div>
 
-      <!-- Panel: Performance Marketing -->
-      <div class="srv-panel" id="srv-performance">
-        <div class="srv-panel-intro">
-          <h3>Performance Marketing</h3>
-          <p>We help brands grow with data-driven paid campaigns across Meta, Google and beyond.</p>
-        </div>
-        <div class="srv-cards-grid">
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">📘</div>
-              <div class="srv-card-tag">High ROI</div>
-            </div>
-            <h4>Meta Ads</h4>
-            <p>Facebook & Instagram campaigns built to convert and scale your eCommerce brand.</p>
-            <ul class="srv-card-list">
-              <li>Campaign Strategy & Setup</li>
-              <li>Audience Research</li>
-              <li>Creative Direction</li>
-              <li>ROAS Optimization</li>
-            </ul>
-          </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">🔍</div>
-              <div class="srv-card-tag">High Intent</div>
-            </div>
-            <h4>Google Ads</h4>
-            <p>Search, Shopping & Display campaigns to drive high-intent buyers to your store.</p>
-            <ul class="srv-card-list">
-              <li>Search Campaigns</li>
-              <li>Google Shopping</li>
-              <li>Display & YouTube</li>
-              <li>Keyword Optimization</li>
-            </ul>
-          </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">🎯</div>
-            </div>
-            <h4>Retargeting</h4>
-            <p>Re-engage website visitors and cart abandoners to maximize conversions.</p>
-            <ul class="srv-card-list">
-              <li>Pixel Setup & Tracking</li>
-              <li>Custom Audiences</li>
-              <li>Cart Recovery Ads</li>
-              <li>Lookalike Campaigns</li>
-            </ul>
-          </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">🏪</div>
-            </div>
-            <h4>D2C Campaigns</h4>
-            <p>Full-funnel direct-to-consumer marketing strategies for your own store.</p>
-            <ul class="srv-card-list">
-              <li>Brand Awareness Ads</li>
-              <li>Product Launch Campaigns</li>
-              <li>Offer & Sale Promotions</li>
-              <li>Customer Acquisition</li>
-            </ul>
-          </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">🔽</div>
-            </div>
-            <h4>Funnel Ads</h4>
-            <p>Top, mid & bottom funnel creatives engineered specifically for conversions.</p>
-            <ul class="srv-card-list">
-              <li>TOFU Awareness Ads</li>
-              <li>MOFU Consideration</li>
-              <li>BOFU Conversion Ads</li>
-              <li>A/B Testing</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <!-- ========================================
+           MOBILE: Accordion (hidden on desktop)
+      ========================================= -->
+      <div class="mobile-accordion">
 
-      <!-- Panel: Website Development -->
-      <div class="srv-panel" id="srv-webdev">
-        <div class="srv-panel-intro">
-          <h3>Website Development</h3>
-          <p>We build fast, conversion-focused eCommerce websites and landing pages that turn visitors into customers.</p>
-        </div>
-        <div class="srv-cards-grid">
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">🟢</div>
-              <div class="srv-card-tag">Most Popular</div>
+        <!-- Accordion: Marketplaces -->
+        <div class="mob-acc-item" id="mob-marketplaces">
+          <button class="mob-acc-header" onclick="mobToggle('mob-marketplaces')">
+            <div class="mob-acc-left">
+              <div class="mob-acc-icon-wrap">🛒</div>
+              <div class="mob-acc-info">
+                <span class="mob-acc-title">Market Places</span>
+                <span class="mob-acc-sub">Amazon, Flipkart, Myntra & more</span>
+              </div>
             </div>
-            <h4>Shopify Development</h4>
-            <p>Custom Shopify stores built for speed, great UX and maximum conversions.</p>
-            <ul class="srv-card-list">
-              <li>Custom Theme Setup</li>
-              <li>App Integration</li>
-              <li>Mobile Optimized</li>
-              <li>Payment Gateway Setup</li>
-            </ul>
-          </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">🌐</div>
+            <div class="mob-acc-chevron">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
             </div>
-            <h4>eCommerce Website</h4>
-            <p>Full eCommerce website creation from scratch — designed, built and launched.</p>
-            <ul class="srv-card-list">
-              <li>UI/UX Design</li>
-              <li>Frontend Development</li>
-              <li>Product Catalog</li>
-              <li>SEO Foundation</li>
-            </ul>
-          </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">📄</div>
+          </button>
+          <div class="mob-acc-body">
+            <div class="mob-service-list">
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/amazon.svg" alt="Amazon Service"></span><span class="mob-si-name">Amazon</span><span class="mob-si-tag">Most Popular</span></div><ul><li>Account Setup & Management</li><li>Product Listing & SEO</li><li>Amazon Ads (PPC)</li><li>A+ Content Creation</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/flipkart.svg" alt="Flipkart Service"></span><span class="mob-si-name">Flipkart</span></div><ul><li>Seller Onboarding</li><li>Catalog Management</li><li>Flipkart Ads</li><li>Order Management</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/myntra.svg" alt="Myntra Service"></span><span class="mob-si-name">Myntra</span></div><ul><li>Brand Store Setup</li><li>Listing Optimization</li><li>Image & Content</li><li>Campaign Management</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/meesho.svg" alt="Meesho Service"></span><span class="mob-si-name">Meesho</span></div><ul><li>Supplier Onboarding</li><li>Product Uploads</li><li>Pricing Strategy</li><li>Growth Optimization</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/blinkit.svg" alt="Blinkit Service"></span><span class="mob-si-name">Blinkit</span><span class="mob-si-tag mob-si-tag-new">Quick Commerce</span></div><ul><li>Vendor Onboarding</li><li>SKU Management</li><li>Stock Monitoring</li><li>Promotions Setup</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/zepto.svg" alt="Zepto Service"></span><span class="mob-si-name">Zepto</span><span class="mob-si-tag mob-si-tag-new">Quick Commerce</span></div><ul><li>Platform Onboarding</li><li>Product Listing</li><li>Inventory Setup</li><li>Performance Tracking</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/swiggy.svg" alt="Swiggy Instamart"></span><span class="mob-si-name">Instamart</span><span class="mob-si-tag mob-si-tag-new">Quick Commerce</span></div><ul><li>Seller Registration</li><li>Catalog Upload</li><li>Pricing & Offers</li><li>Daily Operations</li></ul></div>
             </div>
-            <h4>Landing Pages</h4>
-            <p>High-converting landing pages for products, offers and ad campaigns.</p>
-            <ul class="srv-card-list">
-              <li>Offer Page Design</li>
-              <li>Lead Capture Pages</li>
-              <li>Product Launch Pages</li>
-              <li>Fast Load Speed</li>
-            </ul>
-          </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">📊</div>
-            </div>
-            <h4>CRO Optimization</h4>
-            <p>Conversion rate optimization to turn more of your existing traffic into buyers.</p>
-            <ul class="srv-card-list">
-              <li>UX Audit & Fixes</li>
-              <li>Checkout Optimization</li>
-              <li>Heatmap Analysis</li>
-              <li>A/B Testing</li>
-            </ul>
           </div>
         </div>
-      </div>
 
-      <!-- Panel: Creative Studio -->
-      <div class="srv-panel" id="srv-creative">
-        <div class="srv-panel-intro">
-          <h3>Creative Studio</h3>
-          <p>Visuals that stop the scroll, tell your story and convert browsers into buyers.</p>
-        </div>
-        <div class="srv-cards-grid">
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">🖼️</div>
+        <!-- Accordion: Performance Marketing -->
+        <div class="mob-acc-item" id="mob-performance">
+          <button class="mob-acc-header" onclick="mobToggle('mob-performance')">
+            <div class="mob-acc-left">
+              <div class="mob-acc-icon-wrap">📈</div>
+              <div class="mob-acc-info">
+                <span class="mob-acc-title">Performance Marketing</span>
+                <span class="mob-acc-sub">Meta, Google, Retargeting & more</span>
+              </div>
             </div>
-            <h4>Product Graphics</h4>
-            <p>Eye-catching product images and main image designs that drive clicks.</p>
-            <ul class="srv-card-list">
-              <li>Main Image Design</li>
-              <li>White Background Edits</li>
-              <li>Lifestyle Composites</li>
-              <li>Image Retouching</li>
-            </ul>
-          </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">📊</div>
+            <div class="mob-acc-chevron">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
             </div>
-            <h4>Infographics</h4>
-            <p>Feature-highlight infographics that educate customers and boost conversions.</p>
-            <ul class="srv-card-list">
-              <li>Feature Callouts</li>
-              <li>Size & Spec Charts</li>
-              <li>Comparison Graphics</li>
-              <li>How-to Visuals</li>
-            </ul>
-          </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">⭐</div>
-              <div class="srv-card-tag">Amazon Special</div>
+          </button>
+          <div class="mob-acc-body">
+            <div class="mob-service-list">
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/meta.svg" alt="Meta Ads"></span><span class="mob-si-name">Meta Ads</span><span class="mob-si-tag">High ROI</span></div><ul><li>Campaign Strategy & Setup</li><li>Audience Research</li><li>Creative Direction</li><li>ROAS Optimization</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/google-ads.svg" alt="Google Ads"></span><span class="mob-si-name">Google Ads</span><span class="mob-si-tag">High Intent</span></div><ul><li>Search Campaigns</li><li>Google Shopping</li><li>Display & YouTube</li><li>Keyword Optimization</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/retargeting.png" alt="Retargeting"></span><span class="mob-si-name">Retargeting</span></div><ul><li>Pixel Setup & Tracking</li><li>Custom Audiences</li><li>Cart Recovery Ads</li><li>Lookalike Campaigns</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/digital-campaign.png" alt="D2C Campaigns"></span><span class="mob-si-name">D2C Campaigns</span></div><ul><li>Brand Awareness Ads</li><li>Product Launch Campaigns</li><li>Offer & Sale Promotions</li><li>Customer Acquisition</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/funnel_ads.png" alt="Funnel Ads"></span><span class="mob-si-name">Funnel Ads</span></div><ul><li>TOFU Awareness Ads</li><li>MOFU Consideration</li><li>BOFU Conversion Ads</li><li>A/B Testing</li></ul></div>
             </div>
-            <h4>A+ Content</h4>
-            <p>Premium A+ / EBC content for Amazon & Flipkart that builds trust and increases sales.</p>
-            <ul class="srv-card-list">
-              <li>Brand Story Module</li>
-              <li>Comparison Charts</li>
-              <li>Enhanced Images</li>
-              <li>Text + Visual Layout</li>
-            </ul>
-          </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">📢</div>
-            </div>
-            <h4>Ad Creatives</h4>
-            <p>Scroll-stopping static and motion ad creatives for Meta, Google and marketplaces.</p>
-            <ul class="srv-card-list">
-              <li>Static Ad Banners</li>
-              <li>Carousel Designs</li>
-              <li>Story & Reel Graphics</li>
-              <li>Offer Creatives</li>
-            </ul>
-          </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">🎬</div>
-            </div>
-            <h4>Video Editing</h4>
-            <p>Product videos, reels and brand films edited for maximum impact.</p>
-            <ul class="srv-card-list">
-              <li>Product Demo Videos</li>
-              <li>Instagram Reels</li>
-              <li>Ad Video Edits</li>
-              <li>Brand Films</li>
-            </ul>
-          </div>
-          <div class="srv-card">
-            <div class="srv-card-top">
-              <div class="srv-card-emoji">💡</div>
-            </div>
-            <h4>Branding</h4>
-            <p>Logo, identity and brand guidelines that make your brand unforgettable.</p>
-            <ul class="srv-card-list">
-              <li>Logo Design</li>
-              <li>Brand Color Palette</li>
-              <li>Typography System</li>
-              <li>Brand Guidelines Doc</li>
-            </ul>
           </div>
         </div>
-      </div>
+
+        <!-- Accordion: Website Development -->
+        <div class="mob-acc-item" id="mob-webdev">
+          <button class="mob-acc-header" onclick="mobToggle('mob-webdev')">
+            <div class="mob-acc-left">
+              <div class="mob-acc-icon-wrap">💻</div>
+              <div class="mob-acc-info">
+                <span class="mob-acc-title">Website Development</span>
+                <span class="mob-acc-sub">Shopify, Landing Pages & CRO</span>
+              </div>
+            </div>
+            <div class="mob-acc-chevron">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </div>
+          </button>
+          <div class="mob-acc-body">
+            <div class="mob-service-list">
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/shopify.svg" alt="Shopify Service"></span><span class="mob-si-name">Shopify Development</span><span class="mob-si-tag">Most Popular</span></div><ul><li>Custom Theme Setup</li><li>App Integration</li><li>Mobile Optimized</li><li>Payment Gateway Setup</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/ecommerce.png" alt="eCommerce Website"></span><span class="mob-si-name">eCommerce Website</span></div><ul><li>UI/UX Design</li><li>Frontend Development</li><li>Product Catalog</li><li>SEO Foundation</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/landing-page.png" alt="Landing Pages"></span><span class="mob-si-name">Landing Pages</span></div><ul><li>Offer Page Design</li><li>Lead Capture Pages</li><li>Product Launch Pages</li><li>Fast Load Speed</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/performance.png" alt="CRO Optimization"></span><span class="mob-si-name">CRO Optimization</span></div><ul><li>UX Audit & Fixes</li><li>Checkout Optimization</li><li>Heatmap Analysis</li><li>A/B Testing</li></ul></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion: Creative Studio -->
+        <div class="mob-acc-item" id="mob-creative">
+          <button class="mob-acc-header" onclick="mobToggle('mob-creative')">
+            <div class="mob-acc-left">
+              <div class="mob-acc-icon-wrap">🎨</div>
+              <div class="mob-acc-info">
+                <span class="mob-acc-title">Creative Studio</span>
+                <span class="mob-acc-sub">Graphics, Video, A+ Content & Branding</span>
+              </div>
+            </div>
+            <div class="mob-acc-chevron">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </div>
+          </button>
+          <div class="mob-acc-body">
+            <div class="mob-service-list">
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/product_graphics.png" alt="Product Graphics"></span><span class="mob-si-name">Product Graphics</span></div><ul><li>Main Image Design</li><li>White Background Edits</li><li>Lifestyle Composites</li><li>Image Retouching</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/Infographics.png" alt="Infographics"></span><span class="mob-si-name">Infographics</span></div><ul><li>Feature Callouts</li><li>Size & Spec Charts</li><li>Comparison Graphics</li><li>How-to Visuals</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/A_Content.png" alt="A+ Content"></span><span class="mob-si-name">A+ Content</span><span class="mob-si-tag">Amazon Special</span></div><ul><li>Brand Story Module</li><li>Comparison Charts</li><li>Enhanced Images</li><li>Text + Visual Layout</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/Ad_creatives.png" alt="Ad Creatives"></span><span class="mob-si-name">Ad Creatives</span></div><ul><li>Static Ad Banners</li><li>Carousel Designs</li><li>Story & Reel Graphics</li><li>Offer Creatives</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/video-editing.png" alt="Video Editing"></span><span class="mob-si-name">Video Editing</span></div><ul><li>Product Demo Videos</li><li>Instagram Reels</li><li>Ad Video Edits</li><li>Brand Films</li></ul></div>
+              <div class="mob-service-item"><div class="mob-si-top"><span class="mob-si-emoji"><img src="../images/services_icon/brand.png" alt="Branding"></span><span class="mob-si-name">Branding</span></div><ul><li>Logo Design</li><li>Brand Color Palette</li><li>Typography System</li><li>Brand Guidelines Doc</li></ul></div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end mobile-accordion -->
 
     </div>
   </section>
 
-  <!-- ===== WHAT WE DO (PROCESS) ===== -->
+  <!-- ===== PROCESS ===== -->
   <section class="srv-process">
     <div class="srv-container">
       <div class="srv-section-head">
@@ -436,101 +322,36 @@
         <h2>What We <span>Do For You</span></h2>
         <p>A clear, structured approach to growing your eCommerce business step by step.</p>
       </div>
-
       <div class="srv-process-grid">
-
-        <div class="srv-process-card">
-          <div class="srv-process-number">01</div>
-          <div class="srv-process-icon">⚙️</div>
-          <h4>Account Setup & Optimization</h4>
-          <ul>
-            <li>Account Onboarding</li>
-            <li>Compliance & Documentation</li>
-            <li>Category Approval</li>
-          </ul>
-        </div>
-
-        <div class="srv-process-card">
-          <div class="srv-process-number">02</div>
-          <div class="srv-process-icon">📋</div>
-          <h4>Listing & Catalog Management</h4>
-          <ul>
-            <li>Product Listing Creation</li>
-            <li>SEO Keyword Research</li>
-            <li>Listing Optimization</li>
-            <li>A+ Content Creation</li>
-            <li>Catalog Health Management</li>
-          </ul>
-        </div>
-
-        <div class="srv-process-card">
-          <div class="srv-process-number">03</div>
-          <div class="srv-process-icon">📣</div>
-          <h4>Marketplace Advertising</h4>
-          <ul>
-            <li>Amazon Sponsored Ads</li>
-            <li>Flipkart Ads</li>
-            <li>Keyword Targeting</li>
-            <li>Bid Optimization</li>
-            <li>ACOS Reduction Strategy</li>
-            <li>ROAS Scaling</li>
-          </ul>
-        </div>
-
-        <div class="srv-process-card">
-          <div class="srv-process-number">04</div>
-          <div class="srv-process-icon">🚀</div>
-          <h4>Operation & Growth</h4>
-          <ul>
-            <li>Inventory & Order Management</li>
-            <li>Returns & Dispute Handling</li>
-            <li>Sales Analytics & Reporting</li>
-            <li>Growth Strategy Planning</li>
-            <li>Brand Store Creation</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA STRIP ===== -->
-  <section class="srv-cta">
-    <div class="srv-cta-inner">
-      <div class="srv-cta-left">
-        <h2>Ready to Scale Your Brand?</h2>
-        <p>Book a free marketplace audit and get a custom growth plan — no strings attached.</p>
-      </div>
-      <div class="srv-cta-right">
-        <a href="tel:7433984615" class="srv-cta-phone">📞 7433 984 615</a>
-        <a href="/contact/" class="srv-btn-primary">Book Free Audit →</a>
-        <a href="https://wa.me/917433984615" target="_blank" class="srv-wa-btn" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" fill="white" width="26" height="26">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.57a.75.75 0 00.918.919l5.819-1.474A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.712 9.712 0 01-4.953-1.354l-.355-.211-3.676.931.96-3.576-.232-.368A9.715 9.715 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
-          </svg>
-        </a>
+        <div class="srv-process-card"><div class="srv-process-number">01</div><div class="srv-process-icon">⚙️</div><h4>Account Setup & Optimization</h4><ul><li>Account Onboarding</li><li>Compliance & Documentation</li><li>Category Approval</li></ul></div>
+        <div class="srv-process-card"><div class="srv-process-number">02</div><div class="srv-process-icon">📋</div><h4>Listing & Catalog Management</h4><ul><li>Product Listing Creation</li><li>SEO Keyword Research</li><li>Listing Optimization</li><li>A+ Content Creation</li><li>Catalog Health Management</li></ul></div>
+        <div class="srv-process-card"><div class="srv-process-number">03</div><div class="srv-process-icon">📣</div><h4>Marketplace Advertising</h4><ul><li>Amazon Sponsored Ads</li><li>Flipkart Ads</li><li>Keyword Targeting</li><li>Bid Optimization</li><li>ACOS Reduction Strategy</li><li>ROAS Scaling</li></ul></div>
+        <div class="srv-process-card"><div class="srv-process-number">04</div><div class="srv-process-icon">🚀</div><h4>Operation & Growth</h4><ul><li>Inventory & Order Management</li><li>Returns & Dispute Handling</li><li>Sales Analytics & Reporting</li><li>Growth Strategy Planning</li><li>Brand Store Creation</li></ul></div>
       </div>
     </div>
   </section>
 
   <div id="footer-placeholder"></div>
 
-  <!-- Floating WhatsApp -->
   <a href="https://wa.me/917433984615" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24" fill="white">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.57a.75.75 0 00.918.919l5.819-1.474A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.712 9.712 0 01-4.953-1.354l-.355-.211-3.676.931.96-3.576-.232-.368A9.715 9.715 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
-    </svg>
+    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.57a.75.75 0 00.918.919l5.819-1.474A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.712 9.712 0 01-4.953-1.354l-.355-.211-3.676.931.96-3.576-.232-.368A9.715 9.715 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
   </a>
-  
+
   <script src="../js/main.js"></script>
   <script>
+    // Desktop tabs
     function srvTab(id, btn) {
       document.querySelectorAll('.srv-panel').forEach(p => p.classList.remove('active'));
       document.querySelectorAll('.srv-tab-btn').forEach(b => b.classList.remove('active'));
       document.getElementById('srv-' + id).classList.add('active');
       btn.classList.add('active');
+    }
+
+    // Mobile accordion
+    function mobToggle(id) {
+    const item = document.getElementById(id);
+
+    item.classList.toggle('open');
     }
   </script>
 </body>

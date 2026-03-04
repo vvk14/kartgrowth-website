@@ -188,3 +188,22 @@ function submitContactForm() {
     if (success)  success.style.display  = 'block';
   }, 1400);
 }
+// Footer accordion toggle
+window.footerToggle = function(trigger) {
+  if (window.innerWidth > 768) return;
+
+  const col   = trigger.parentElement;
+  const body  = col.querySelector('.footer-acc-body');
+  const arrow = trigger.querySelector('.footer-acc-arrow');
+  const isOpen = body.classList.contains('footer-acc-open');
+
+  // Close all
+  document.querySelectorAll('.footer-acc-body').forEach(b => b.classList.remove('footer-acc-open'));
+  document.querySelectorAll('.footer-acc-arrow').forEach(a => a.classList.remove('footer-acc-arrow-open'));
+
+  // Open clicked if it was closed
+  if (!isOpen) {
+    body.classList.add('footer-acc-open');
+    arrow.classList.add('footer-acc-arrow-open');
+  }
+};
