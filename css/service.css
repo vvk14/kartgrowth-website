@@ -621,7 +621,7 @@
 }
 
 /* Small phones */
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .srv-hero-content h1      { font-size: 28px; margin-top:15px; }
   .mob-acc-sub              { display: none; }
   .mob-service-item ul      { grid-template-columns: 1fr; }
